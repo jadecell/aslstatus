@@ -79,13 +79,11 @@ static const char unknown_str[] = "n/a";
 static struct arg_t args[] = {
 
 /* function		format		argument	interval (in ms) */
-{ cpu_perc,		"^c#e06c75^ %s%% ^c#ffffff^/",	NULL,	  1 SEC, END },
-{ run_command,          "^c#61afef^ %s ^c#ffffff^/",      "pacupdate", 30 MIN, END },
-{ run_command,          "^c#e06c75^ %s ^c#ffffff^/",      "memory", 1 SEC, END },
-{ kernel_release,       "^c#c678dd^  %s ^c#ffffff^/",	NULL,	  60 MIN, END },
-{ run_command,          "^c#e06c75^ %s ^c#ffffff^/",      "weather", 30 MIN, END },
-{ run_command,          "^c#61afef^ %s ^c#ffffff^/",      "volume", 1 SEC, END },
-{ uptime,               "^c#e06c75^  %s ^c#ffffff^/",	NULL,	  60 SEC, END },
-{ datetime,		"^c#c678dd^  %s ",	"%a %d %b %Y %X",	  1 SEC, END }
+{ cpu_perc,		"^c#282c34^^b#e06c75^ %s%% ",	NULL,	  1 SEC, END },
+{ run_command,          "^b#98c379^ %s ",      "pacupdate", 30 MIN, END },
+{ run_command,          "^b#e5c07b^ %s ",      "memory", 1 SEC, END },
+{ run_command,          "^b#61afef^ %s ",      "weather", 30 MIN, END },
+{ uptime,               "^b#c678dd^  %s ",	NULL,	  60 SEC, END },
+{ datetime,		"^b#56b6c2^  %s ",	"%a %d %b %Y %X",	  1 SEC, END }
 
 };
