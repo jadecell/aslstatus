@@ -78,12 +78,14 @@ static const char unknown_str[] = "n/a";
 
 static struct arg_t args[] = {
 
-/* function		format		argument	interval (in ms) */
-{ cpu_perc,		"^c#282c34^^b#e06c75^ %s%% ",	NULL,	  1 SEC, END },
-{ run_command,          "^b#98c379^ %s ",      "pacupdate", 30 MIN, END },
-{ run_command,          "^b#e5c07b^ %s ",      "memory", 1 SEC, END },
-{ run_command,          "^b#61afef^ %s ",      "weather", 30 MIN, END },
-{ uptime,               "^b#c678dd^  %s ",	NULL,	  60 SEC, END },
-{ datetime,		"^b#56b6c2^  %s ",	"%a %d %b %Y %X",	  1 SEC, END }
+/* function             format		argument	interval (in ms) */
+{ cpu_perc,             "^b#0f0f0f^^c#6272a4^ %s%% ",	NULL,	  1 SEC, END },
+{ run_command,          "^c#8be9fd^ %s ",      "pacupdate", 30 MIN, END },
+{ run_command,          "^c#50fa7b^ %s ",      "memory", 1 SEC, END },
+{ run_command,          "^c#ffb86c^ %s ",      "weather", 30 MIN, END },
+{ run_command,          "^c#ff5555^ %s ",      "kernel", 60 MIN, END },
+{ run_command,          "^c#ff79c6^ %s",	"cputemp",	  5 SEC, END },
+{ run_command,          "^c#f1fa8c^ %s ",	"volume",	  1 SEC, END },
+{ datetime,             "^c#bd93f9^  %s ",	"%a %d %b %Y %X",	  1 SEC, END }
 
 };
