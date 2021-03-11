@@ -83,7 +83,7 @@ static struct arg_t args[] = {
 { run_command,          "%s ",      "cpuperc dwm", 2 SEC, END },
 { run_command,          "%s ",      "pacupdate dwm", 30 MIN, END },
 { run_command,          "%s ",      "memory dwm", 1 SEC, END },
-{ run_command,          "%s ",      "forecast", 30 MIN, END },
+{ run_command,          "%s ",      "forecast", 180 MIN, END },
 { run_command,          "%s ",      "kernel dwm", 60 MIN, END },
 { run_command,          "%s ",      "cputemp dwm",	  5 SEC, END },
 { run_command,          "%s ",      "volume dwm",	  1 SEC, END },
