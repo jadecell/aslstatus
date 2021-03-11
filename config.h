@@ -79,13 +79,14 @@ static const char unknown_str[] = "n/a";
 static struct arg_t args[] = {
 
 /* function             format		argument	interval (in ms) */
-{ cpu_perc,             "^b#0f0f0f^^c#6272a4^ %s%% ",	NULL,	  1 SEC, END },
-{ run_command,          "^c#8be9fd^ %s ",      "pacupdate", 30 MIN, END },
-{ run_command,          "^c#50fa7b^ %s ",      "memory", 1 SEC, END },
-{ run_command,          "^c#ffb86c^ %s ",      "weather", 30 MIN, END },
-{ run_command,          "^c#ff5555^ %s ",      "kernel", 60 MIN, END },
-{ run_command,          "^c#ff79c6^ %s",	"cputemp",	  5 SEC, END },
-{ run_command,          "^c#f1fa8c^ %s ",	"volume",	  1 SEC, END },
-{ datetime,             "^c#bd93f9^  %s ",	"%a %d %b %Y %X",	  1 SEC, END }
+{ run_command,          "%s ",      "echo ' '", 1 SEC, END },
+{ run_command,          "%s ",      "cpuperc dwm", 2 SEC, END },
+{ run_command,          "%s ",      "pacupdate dwm", 30 MIN, END },
+{ run_command,          "%s ",      "memory dwm", 1 SEC, END },
+{ run_command,          "%s ",      "forecast", 30 MIN, END },
+{ run_command,          "%s ",      "kernel dwm", 60 MIN, END },
+{ run_command,          "%s ",      "cputemp dwm",	  5 SEC, END },
+{ run_command,          "%s ",      "volume dwm",	  1 SEC, END },
+{ run_command,          "%s ",      "clock dwm",	  1 SEC, END },
 
 };
