@@ -79,14 +79,14 @@ static const char unknown_str[] = "n/a";
 static struct arg_t args[] = {
 
 /* function             format		argument	interval (in ms) */
-{ run_command,          "%s ",      "echo ' '", 1 SEC, END },
-{ run_command,          "%s ",      "cpuperc dwm", 2 SEC, END },
-{ run_command,          "%s ",      "pacupdate dwm", 30 MIN, END },
-{ run_command,          "%s ",      "memory dwm", 1 SEC, END },
-{ run_command,          "%s ",      "forecast", 180 MIN, END },
-{ run_command,          "%s ",      "kernel dwm", 60 MIN, END },
-{ run_command,          "%s ",      "cputemp dwm",	  5 SEC, END },
-{ run_command,          "%s ",      "volume dwm",	  1 SEC, END },
-{ run_command,          "%s ",      "clock dwm",	  1 SEC, END },
+{ run_command,          "%s ",      "echo ' '",        1 SEC, END },
+{ run_command,          "%s ",      "cpuperc dwm",     2 SEC, END },
+{ run_command,          "%s ",      "pacupdate dwm",   30 MIN, END },
+{ run_command,          "%s ",      "memory dwm",      1 SEC, END },
+{ run_command,          "%s ",      "corona",          360 MIN, END },
+{ run_command,          "%s ",      "forecast",        360 MIN, END },
+{ run_command,          "%s ",      "cputemp dwm",	   1 MIN, END },
+{ run_command,          "%s ",      "volume dwm",	   1 SEC, END },
+{ run_command,          "%s ",      "clock dwm",	   1 SEC, END },
 
 };
