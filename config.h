@@ -85,7 +85,7 @@ static struct arg_t args[] = {
 { run_command,          "%s ",      "memory dwm",      1 SEC, END },
 { run_command,          "%s ",      "corona",          360 MIN, END },
 { run_command,          "%s ",      "forecast",        360 MIN, END },
-{ run_command,          "%s ",      "cputemp dwm",	   1 MIN, END },
+{ run_command,          "%s ",      "cputemp desktop",	   1 MIN, END },
 { run_command,          "%s ",      "volume dwm",	   1 SEC, END },
 { run_command,          "%s ",      "clock dwm",	   1 SEC, END },
 
